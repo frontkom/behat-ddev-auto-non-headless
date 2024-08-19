@@ -1,6 +1,6 @@
 <?php
 
-namespace eiriksm\BehatAutoDdevNonHeadless;
+namespace frontkom\BehatAutoDdevNonHeadless;
 
 use Behat\Testwork\ServiceContainer\Extension;
 use Behat\Testwork\ServiceContainer\ExtensionManager;
