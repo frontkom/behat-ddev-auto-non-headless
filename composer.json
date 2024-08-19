@@ -1,0 +1,27 @@
+{
+    "name": "eiriksm/behat-ddev-auto-non-headless",
+    "description": "Automatically disables headless when running behat tests in ddev.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eirik S. Morland",
+            "email": "eirik@morland.no"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "eiriksm\\BehatAutoDdevNonHeadless\\": "src"
+      }
+    },
+    "scripts": {
+      "test": "@composer lint && phpunit",
+      "lint": "phpcs -p -n",
+      "phpstan": "phpstan analyse src tests"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "config": {
+    }
+}
