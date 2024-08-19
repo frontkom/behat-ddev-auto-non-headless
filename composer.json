@@ -1,5 +1,5 @@
 {
-    "name": "eiriksm/behat-ddev-auto-non-headless",
+    "name": "frontkom/behat-ddev-auto-non-headless",
     "description": "Automatically disables headless when running behat tests in ddev.",
     "type": "library",
     "license": "MIT",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
       "psr-4": {
-        "eiriksm\\BehatAutoDdevNonHeadless\\": "src"
+        "frontkom\\BehatAutoDdevNonHeadless\\": "src"
       }
     },
     "scripts": {
