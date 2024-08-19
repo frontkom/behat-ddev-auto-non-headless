@@ -1,0 +1,1 @@
+# behat-ddev-auto-non-headless
