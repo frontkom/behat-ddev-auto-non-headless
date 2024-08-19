@@ -10,10 +10,10 @@ use Symfony\Component\DependencyInjection\Definition;
 
 class DisableHeadlessExtension implements Extension {
 
-  public function load(ContainerBuilder $container, array $config) {
-  }
+  public function load(ContainerBuilder $container, array $config) {}
 
-  public function process(ContainerBuilder $container) {
+  public function process(ContainerBuilder $container)
+  {
     if (getenv('IS_DDEV_PROJECT') !== 'true') {
       return;
     }
@@ -69,13 +69,12 @@ class DisableHeadlessExtension implements Extension {
     }
   }
 
-  public function getConfigKey() {
+  public function getConfigKey()
+  {
+    return 'disable_headless';
   }
 
-  public function initialize(ExtensionManager $extensionManager) {
-  }
-
-  public function configure(ArrayNodeDefinition $builder) {
-  }
+  public function initialize(ExtensionManager $extensionManager) {}
+  public function configure(ArrayNodeDefinition $builder) {}
 
 }
